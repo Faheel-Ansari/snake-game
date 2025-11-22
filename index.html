@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="snake-favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Snake Game</title>
+</head>
+<body>
+    <main id="main" theme="">
+        <section>
+            <div class="infos">
+                <div class="info" id="highScore">High Score: 0</div>
+                <div class="info" id="score">Score: 0</div>
+                <div class="info" id="timer">Time: 0:0</div>
+                <button class="info" id="theme">Theme : Dark</button>
+            </div>
+            <div class="board"></div>
+            <div class="arrow-buttons">
+                <div class="up-arrow-container btn-container">
+                    <button for="ArrowUp" class="touchBtns"><i class="fa-solid fa-angles-up"></i></button>
+                </div>
+                <div class="left-right-arrow-container btn-container">
+                    <button for="ArrowLeft" class="touchBtns"><i class="fa-solid fa-angles-left"></i></button>
+                    <button for="Escape" class="touchBtns">ESC</button>
+                    <button for="ArrowRight" class="touchBtns"><i class="fa-solid fa-angles-right"></i></button>
+                </div>
+                <div class="down-arrow-container btn-container">
+                    <button for="ArrowDown" class="touchBtns"><i class="fa-solid fa-angles-down"></i></button>
+                </div>
+            </div>
+        </section>
+        <div class="modal">
+            <div class="start-game-modal">
+                <h1>Welcome, to Snake Game</h1>
+                <p id="startGameHighScore">Your, High Score is 0</p>
+                <p>Press ESC to pause or continue</p>
+                <div class="speed">
+                    <p>Select Snake Speed</p>
+                    <div class="speedBtnDiv">
+                        <span>
+                            <label for="slowSpeed" id="slowSpeedLabel" class="speedBtn">Slow</label>
+                        </span>
+                        <span>
+                            <label for="mediumSpeed" id="mediumSpeedLabel" class="speedBtn">Medium</label>
+                        </span>
+                        <span>
+                            <label for="highSpeed" id="highSpeedLabel" class="speedBtn">High</label>
+                        </span>
+                    </div>
+                </div>
+                <button id="start-game" class="button-disabled">Start Game</button>
+            </div>
+            <div class="restart-game-modal">
+                <h1>Game Over!</h1>
+                <p id="gameOverHighScore">Your, High Score is 0</p>
+                <p>Press ESC to pause or continue</p>
+                <div class="speed">
+                    <p>Select Snake Speed</p>
+                    <div class="speedBtnDiv">
+                        <span>
+                            <label for="slowSpeed" id="slowSpeedLabel" class="speedBtn">Slow</label>
+                        </span>
+                        <span>
+                            <label for="mediumSpeed" id="mediumSpeedLabel" class="speedBtn">Medium</label>
+                        </span>
+                        <span>
+                            <label for="highSpeed" id="highSpeedLabel" class="speedBtn">High</label>
+                        </span>
+                    </div>
+                </div>
+                <button id="restart-game">Restart Game</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
