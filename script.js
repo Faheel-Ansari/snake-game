@@ -132,7 +132,6 @@ function render() {
         food = { x: Math.floor(Math.random() * rows), y: Math.floor(Math.random() * cols) }
         snake.forEach((segment, idx) => {
             if (segment.x == food.x && segment.y == food.y) {
-                console.log('hello');
                 blocks[`${food.x}-${food.y}`].classList.remove('food')
                 food = { x: Math.floor(Math.random() * rows), y: Math.floor(Math.random() * cols) }
                 blocks[`${food.x}-${food.y}`].classList.add('food')
