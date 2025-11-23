@@ -152,28 +152,28 @@ function render() {
     snake.unshift(head)
     snake.pop()
     snake.forEach((segment, idx) => {
-        if (score <= 15) {
+        if (score <= 25) {
             blocks[`${segment.x}-${segment.y}`].classList.add('fill-level-1')
             if (idx === 0) {
                 blocks[`${segment.x}-${segment.y}`].classList.remove('fill-level-1')
                 blocks[`${segment.x}-${segment.y}`].classList.add('head-level-1')
             }
         }
-        else if (score <= 25) {
+        else if (score <= 50) {
             blocks[`${segment.x}-${segment.y}`].classList.add('fill-level-2')
             if (idx === 0) {
                 blocks[`${segment.x}-${segment.y}`].classList.remove('fill-level-2')
                 blocks[`${segment.x}-${segment.y}`].classList.add('head-level-2')
             }
         }
-        else if (score <= 35) {
+        else if (score <= 100) {
             blocks[`${segment.x}-${segment.y}`].classList.add('fill-level-3')
             if (idx === 0) {
                 blocks[`${segment.x}-${segment.y}`].classList.remove('fill-level-3')
                 blocks[`${segment.x}-${segment.y}`].classList.add('head-level-3')
             }
         }
-        else if (score <= 45) {
+        else if (score <= 200) {
             blocks[`${segment.x}-${segment.y}`].classList.add('fill-level-4')
             if (idx === 0) {
                 blocks[`${segment.x}-${segment.y}`].classList.remove('fill-level-4')
