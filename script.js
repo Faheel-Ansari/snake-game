@@ -173,11 +173,7 @@ function render() {
                 blocks[`${segment.x}-${segment.y}`].classList.add('head-level-3')
             }
         }
-<<<<<<< HEAD
         else if (score <= 200) {
-=======
-        else if (score <= 150) {
->>>>>>> 65b077aab54d2fb8415eb26707e53fd661674b3a
             blocks[`${segment.x}-${segment.y}`].classList.add('fill-level-4')
             if (idx === 0) {
                 blocks[`${segment.x}-${segment.y}`].classList.remove('fill-level-4')
